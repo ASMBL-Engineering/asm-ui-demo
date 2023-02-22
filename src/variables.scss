@@ -1,0 +1,221 @@
+// :root {
+//   // App specific
+//   --bodyBackgroundColor: #fff;
+//   --headerBgColor: #290C54;
+//   --headerFontColor: #fff;
+
+//   // Global
+//   --borderRadius: 0;
+//   --padding: 20px;
+//   --dividerColor: #290C54;
+//   --border: 1px solid #290C54;
+
+//   // Buttons
+//   --buttonPadding: 12px 16px;
+//   --buttonBorderRadius: 50px;
+
+//   --defaultButtonBgColor: #E390D4;
+//   --defaultButtonFontColor: #290C54;
+//   --defaultButtonBorder: none;
+
+//   --defaultButtonHoverBgColor: #ce81c0;
+//   --defaultButtonHoverFontColor: #290C54;
+//   --defaultButtonHoverBorder: none;
+
+//   --primaryButtonBgColor: #A7FAFF;
+//   --primaryButtonFontColor: #290C54;
+//   --primaryButtonBorder: 1px solid transparent;
+
+//   --primaryButtonHoverBgColor: #92dce0;
+//   --primaryButtonHoverFontColor: #290C54;
+//   --primaryButtonHoverBorder: 1px solid transparent;
+
+//   --basicButtonBgColor:  #fff;
+//   --basicButtonFontColor: #290C54;
+//   --basicButtonBorder: 1px solid #290C54;
+
+//   --basicButtonHoverBgColor: #fff;
+//   --basicButtonHoverFontColor: #290C54;
+//   --basicButtonHoverBorder: 1px solid #290C54;
+
+//   // Font
+//   --headingTopMargin: .5rem;
+//   --headingBottomMargin: 1rem;
+//   --headingFontColor: #290C54;
+//   --h1FontSize: 4rem;
+//   --h2FontSize: 2.5rem;
+//   --h3FontSize: 2rem;
+//   --h4FontSize: 1.25rem;
+//   --h5FontSize: 1.25rem;
+//   --h6FontSize: 1rem;
+
+//   --bodyLineHeight: 1.25;
+//   --bodyFontSize: 1rem;
+//   --bodyFontColor: #290C54;
+//   --codeFontSize: .875rem;
+//   --captionFontSize: .875rem;
+
+//   // Icons
+//   --miniIconSize: 16px;
+//   --tinyIconSize: 20px;
+//   --smallIconSize: 24px;
+//   --largeIconSize: 32px;
+//   --bigIconSize: 40px;
+//   --hugeIconSize: 56px;
+//   --massiveIconSize: 80px;
+
+//   // Inputs
+//   --labelFontColor: #290C54;
+//   --inputBgColor: #fff;
+//   --inputPadding: 12px 16px;
+//   --inputBorder: 1px solid #290C54;
+//   --inputFocusBorder: 1px solid #290C54;
+//   --inputFontColor: #290C54;
+//   --inputDisabledBgColor: #777;
+//   --checkboxBgColor: #290C54;
+//   --checkboxCheckColor: #fff;
+
+//   // Alerts
+//   --alertPadding: 8px 12px;
+//   --warningBgColor: rgba(255, 255, 0, .25);
+//   --warningFontColor: #b2b200;
+//   --successBgColor: rgba(0, 255, 0, .25);
+//   --successFontColor: #009900;
+//   --errorBgColor: rgba(255, 0, 0, .25);
+//   --errorFontColor: #ff0000;
+//   --infoBgColor: rgb(0, 0, 255, .25);
+//   --infoFontColor: #0000ff;
+
+//   // Modal
+//   --modalPadding: 80px 40px 20px;
+//   --modalBgColor: #fff;
+//   --modalOverlayBgColor: rgba(51, 51, 51, .6);
+//   --modalCloseButtonBgColor: var(--defaultButtonBgColor);
+//   --modalCloseButtonBorder: var(--defaultButtonBorder);
+//   --modalCloseButtonHoverBorder:var(--defaultButtonBorder);
+//   --modalCloseButtonFontColor: var(--defaultButtonFontColor);
+//   --modalCloseButtonHoverBgColor: var(--defaultButtonHoverBgColor);
+//   --modalCloseButtonHoverFontColor: var(--defaultButtonHoverFontColor);
+
+//   // Table
+//   --tablePadding: 5px 10px;
+//   --tableBorder: 1px solid #290C54;
+
+//   // Divider
+//   --dividerBorder: var(--border);
+//   --dividerMargin: 1rem;
+
+//   // Iframe
+//   --iframeBorder: var(--border);
+// }
+
+html[data-theme="dark"] {
+  // App specific
+  --bodyBackgroundColor: #777;
+  --headerBgColor: #282c34;
+  --headerFontColor: #fff;
+
+  // Global
+  --borderRadius: 10px;
+  --padding: 20px;
+  --dividerColor: #fff;
+  --border: 1px solid #ddd;
+
+  // Buttons
+  --buttonPadding: 12px 16px;
+  --buttonBorderRadius: var(--borderRadius);
+
+  --defaultButtonBgColor: darkgreen;
+  --defaultButtonFontColor: #fff;
+  --defaultButtonBorder: none;
+
+  --defaultButtonHoverBgColor: green;
+  --defaultButtonHoverFontColor: #fff;
+  --defaultButtonHoverBorder: none;
+
+  --primaryButtonBgColor: #ddd;
+  --primaryButtonFontColor: darkgreen;
+  --primaryButtonBorder: 1px solid darkgreen;
+
+  --primaryButtonHoverBgColor: #eee;
+  --primaryButtonHoverFontColor: darkgreen;
+  --primaryButtonHoverBorder: 1px solid darkgreen;
+
+  --basicButtonBgColor:  #90ee90;
+  --basicButtonFontColor: #333;
+  --basicButtonBorder: none;
+
+  --basicButtonHoverBgColor: #79c779;
+  --basicButtonHoverFontColor: #333;
+  --basicButtonHoverBorder: none;
+
+  // Font
+  --headingTopMargin: .5rem;
+  --headingBottomMargin: 1rem;
+  --headingFontColor: #ddd;
+  --h1FontSize: 3.5rem;
+  --h2FontSize: 2.75rem;
+  --h3FontSize: 2.25rem;
+  --h4FontSize: 2rem;
+  --h5FontSize: 1.75rem;
+  --h6FontSize: 1.5rem;
+
+  --bodyLineHeight: 1.25;
+  --bodyFontSize: 1rem;
+  --bodyFontColor: #ddd;
+  --codeFontSize: .875rem;
+  --captionFontSize: .875rem;
+
+  // Icons
+  --miniIconSize: 16px;
+  --tinyIconSize: 20px;
+  --smallIconSize: 24px;
+  --largeIconSize: 32px;
+  --bigIconSize: 40px;
+  --hugeIconSize: 56px;
+  --massiveIconSize: 80px;
+
+  // Inputs
+  --labelFontColor: #ddd;
+  --inputBgColor: #666;
+  --inputPadding: 12px 16px;
+  --inputBorder: 1px solid #ddd;
+  --inputFocusBorder: 1px solid #ddd;
+  --inputFontColor: #ddd;
+  --inputDisabledBgColor: #777;
+  --checkboxBgColor: darkgreen;
+  --checkboxCheckColor: #fff;
+
+  // Alerts
+  --alertPadding: 8px 12px;
+  --warningBgColor: rgba(255, 255, 0, .25);
+  --warningFontColor: #b2b200;
+  --successBgColor: rgba(0, 255, 0, .25);
+  --successFontColor: #009900;
+  --errorBgColor: rgba(255, 0, 0, .25);
+  --errorFontColor: #ff0000;
+  --infoBgColor: rgb(0, 0, 255, .25);
+  --infoFontColor: #0000ff;
+
+  // Modal
+  --modalPadding: 80px 40px 20px;
+  --modalBgColor: rgba(51, 51, 51);
+  --modalOverlayBgColor: rgba(51, 51, 51, .6);
+  --modalCloseButtonBgColor: var(--defaultButtonBgColor);
+  --modalCloseButtonBorder: var(--defaultButtonBorder);
+  --modalCloseButtonHoverBorder:var(--defaultButtonBorder);
+  --modalCloseButtonFontColor: var(--defaultButtonFontColor);
+  --modalCloseButtonHoverBgColor: var(--defaultButtonHoverBgColor);
+  --modalCloseButtonHoverFontColor: var(--defaultButtonHoverFontColor);
+
+  // Table
+  --tablePadding: 5px 10px;
+  --tableBorder: 1px solid #ddd;
+
+  // Divider
+  --dividerBorder: var(--border);
+  --dividerMargin: 1rem;
+
+  // Iframe
+  --iframeBorder: var(--border);
+}
