@@ -35,3 +35,6 @@ aws*
 .turbo
 .cache
 node_modules
+
+
+/components
