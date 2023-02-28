@@ -46,6 +46,7 @@ import { ReactComponent as CloseIcon } from './assets/close.svg';
 import { ReactComponent as CameraIcon } from './assets/camera.svg';
 import ThemeSwitcher from './ThemeSwitcher';
 import './App.scss';
+import { DatePicker as TestDatePicker } from "./components/DatePicker";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -208,7 +209,7 @@ function App() {
             <Input
               id="text"
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               type="text"
               label="Text Input"
               style={{ marginBottom: '20px' }}
@@ -217,14 +218,14 @@ function App() {
               id="url"
               value=""
               type="url"
-              onChange={() => {}}
+              onChange={() => { }}
               label="Url Input"
               style={{ marginBottom: '20px' }}
             />
             <Input
               id="time"
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               type="time"
               label="Time Input"
               style={{ marginBottom: '20px' }}
@@ -232,7 +233,7 @@ function App() {
             <Input
               id="tel"
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               type="tel"
               label="Telephone Input"
               style={{ marginBottom: '20px' }}
@@ -240,16 +241,16 @@ function App() {
             <Input
               id="search"
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               type="search"
               label="Search Input"
               style={{ marginBottom: '20px' }}
             />
-            <SearchInput id="search2" onChange={() => {}} label="Search" style={{ marginBottom: '20px' }} value="" />
+            <SearchInput id="search2" onChange={() => { }} label="Search" style={{ marginBottom: '20px' }} value="" />
             <Input
               id="range"
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               type="range"
               label="Range Input"
               style={{ marginBottom: '20px' }}
@@ -257,7 +258,7 @@ function App() {
             <Input
               id="password"
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               type="password"
               label="Password Input"
               style={{ marginBottom: '20px' }}
@@ -266,7 +267,7 @@ function App() {
           <div>
             <Input
               id="num"
-              onChange={() => {}}
+              onChange={() => { }}
               value=""
               type="number"
               label="Number Input"
@@ -274,7 +275,7 @@ function App() {
             />
             <Input
               id="email"
-              onChange={() => {}}
+              onChange={() => { }}
               value=""
               type="email"
               label="Email Input"
@@ -282,7 +283,7 @@ function App() {
             />
             <Input
               id="month"
-              onChange={() => {}}
+              onChange={() => { }}
               value=""
               type="month"
               label="Month Input"
@@ -290,7 +291,7 @@ function App() {
             />
             <Input
               id="week"
-              onChange={() => {}}
+              onChange={() => { }}
               value=""
               type="week"
               label="Week Input"
@@ -298,7 +299,7 @@ function App() {
             />
             <Input
               id="date"
-              onChange={() => {}}
+              onChange={() => { }}
               value=""
               type="date"
               label="Date Input"
@@ -306,7 +307,7 @@ function App() {
             />
             <Input
               id="datetime"
-              onChange={() => {}}
+              onChange={() => { }}
               value=""
               type="datetime-local"
               label="Date Time Input"
@@ -314,7 +315,7 @@ function App() {
             />
             <Input
               id="color"
-              onChange={() => {}}
+              onChange={() => { }}
               value=""
               type="color"
               label="Color Input"
@@ -353,7 +354,7 @@ function App() {
           <div>
             <FormattedNumberInput
               id="formnum"
-              onChange={() => {}}
+              onChange={() => { }}
               label="Formatted Number Input"
               initialValue=""
               style={{ marginBottom: '20px' }}
@@ -374,7 +375,7 @@ function App() {
             <PhoneNumberInput
               id="phone"
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               label="Phone Number Input"
               style={{ marginBottom: '20px' }}
             />
@@ -382,13 +383,13 @@ function App() {
               id=""
               checked
               value=""
-              onChange={() => {}}
+              onChange={() => { }}
               label="Radio Button Input"
               style={{ marginBottom: '20px' }}
             />
             <RadioButtonGroup
               id="radio-group"
-              onChange={() => {}}
+              onChange={() => { }}
               selectedRadio=""
               options={[
                 { id: 'string', value: 'string', label: 'Radio!' },
@@ -473,7 +474,7 @@ function App() {
           </Button>
           <Modal
             ariaModalLabel=""
-            closeButtonIconColor="white"
+            closeButtonIconColor=""
             open={modalOpen}
             onClose={() => setModalOpen(false)}
             closeButtonIcon={<CloseIcon />}
@@ -487,7 +488,7 @@ function App() {
           <Alert
             style={{ marginBottom: '1rem' }}
             alert={{ type: 'warning', active: true, message: "I'm that alert named Luda, ALERT ALERT." }}
-            handleClose={() => {}}
+            handleClose={() => { }}
             closeIcon={<CloseIcon />}
           />
           <Alert
@@ -532,6 +533,9 @@ function App() {
           />
         </Container>
       </Container>
+      <div style={{ marginLeft: "200px", marginTop: "200px", marginBottom: "200px" }}>
+        <TestDatePicker id="test-datepicker" />
+      </div>
     </div>
   );
 }

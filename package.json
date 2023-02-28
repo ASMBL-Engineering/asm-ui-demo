@@ -14,14 +14,14 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react-datepicker": "^4.10.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@assemble-inc/apple-ui": "^0.0.20",
+    "@assemble-inc/apple-ui": "^0.0.57",
     "@assemble-inc/base-ui": "^1.2.15",
     "@assemble-inc/core": "^0.4.48",
-    "@assemble-inc/eslint-config-assemble": "^0.0.24",
-    "@assemble-inc/prettier-config-assemble": "^0.0.6",
+    "@assemble-inc/eslint-config-asm": "^0.0.24",
     "@assemble-inc/util": "^0.1.7",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
