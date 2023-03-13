@@ -14,7 +14,6 @@ import {
   Input,
   Checkbox,
   CurrencyInput,
-  ImageUpload,
   InputWrapper,
   PhoneNumberInput,
   RadioButton,
@@ -46,10 +45,41 @@ import { ReactComponent as CloseIcon } from './assets/close.svg';
 import { ReactComponent as CameraIcon } from './assets/camera.svg';
 import ThemeSwitcher from './ThemeSwitcher';
 import './App.scss';
-import { DatePicker as TestDatePicker } from "./components/DatePicker";
+import { DatePicker as TestDatePicker } from "../components/DatePicker";
+import { Input as TestInput } from "../components/Input";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [testInputValue, setTestInputValue] = useState("");
+  const [testFlexInputValue, setTestFlexInputValue] = useState("");
+  const [testInputIconValue, setTestInputIconValue] = useState("");
+  const [testClearValue, setTestClearValue] = useState("");
+  const [testMaxCharValue, setTestMaxCharValue] = useState("");
+
+  const handleTestInput = (e: any) => {
+    setTestInputValue(e.target.value);
+  }
+
+  const handleTestInputIcon = (e: any) => {
+    setTestInputIconValue(e.target.value);
+  }
+
+  const handleTextFlexInput = (e: any) => {
+    setTestFlexInputValue(e.target.value);
+  }
+
+  const handleTestClearValue = (e: any) => {
+    setTestClearValue(e.target.value);
+  }
+
+  const handleClearValue = () => {
+    console.log("clicked");
+    setTestClearValue("");
+  }
+
+  const handleTestMaxCharValue = (e: any) => {
+    setTestMaxCharValue(e.target.value);
+  }
 
   return (
     <div className="App">
@@ -361,7 +391,6 @@ function App() {
             />
             <CurrencyInput id="curr" label="Currency Input" style={{ marginBottom: '20px' }} />
             <Checkbox id="check" value="" disabled label="Checkbox" style={{ marginBottom: '20px' }} />
-            <ImageUpload id="imgup" endpointUrl="" label="Image Upload" style={{ marginBottom: '20px' }} />
             <InputWrapper
               htmlFor="custom-input"
               label="Input Wrapper (for custom inputs that adhere to the same style guidelines)"
@@ -533,8 +562,53 @@ function App() {
           />
         </Container>
       </Container>
-      <div style={{ marginLeft: "200px", marginTop: "200px", marginBottom: "200px" }}>
-        <TestDatePicker id="test-datepicker" />
+      <div style={{ width: "490px", marginLeft: "200px" }}>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input dirty={testInputValue ? true : false} value={testInputValue} onChange={handleTestInput} label="Text Field" id="text-input1" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input iconLeft={<div>&#167;</div>} value={testInputIconValue} onChange={handleTestInputIcon} label="Text Field With Left Icon" id="icon-input2" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input dirty={testInputValue ? true : false} iconRight={<div>&#169;</div>} value={testInputIconValue} onChange={handleTestInputIcon} label="Text Field With Right Icon" id="icon-input3" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px", display: "flex", gap: "8px" }}>
+          <Input value={testFlexInputValue} onChange={handleTextFlexInput} label="Text Field In Flex Row" id="text-input4" />
+          <Input value={testFlexInputValue} onChange={handleTextFlexInput} label="Text Field In Flex Row" id="text-input5" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input dirty={true} placeholder="MM/DD/YY" value={testInputValue} onChange={handleTestInput} label="Text Field With Placeholder Text" id="text-input6" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input dirty={true} disabled placeholder="john@apple.com" value={testInputValue} onChange={() => { }} label="Non-Editable" id="text-input7" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input iconLeft={<div>&#x1F50E;</div>} iconRight={<div>&#8855;</div>} value={testClearValue} onIconClick={handleClearValue} onChange={handleTestClearValue} label="Search with Reset" id="icon-input8" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input iconRight={<div>&#8855;</div>} value={testClearValue} onIconClick={handleClearValue} onChange={handleTestClearValue} label="Reset" id="icon-input9" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input value={testInputValue} onChange={handleTestInput} label="Validation (check)" id="icon-input10" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <Input value={testMaxCharValue} onChange={handleTestMaxCharValue} label="Character Limit" id="icon-input11" />
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <div className="asm-input-group">
+            <input />
+            <input />
+          </div>
+        </div>
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <div className="asm-input">
+            <label />
+            <textarea rows={5} cols={10}></textarea>
+          </div>
+        </div>
+        <div style={{ width: "100%", marginTop: "20px", marginBottom: "350px" }}>
+          <TestDatePicker id="date-test" label="Date" />
+        </div>
       </div>
     </div>
   );

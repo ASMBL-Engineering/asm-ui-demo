@@ -18,9 +18,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@assemble-inc/apple-ui": "^0.0.57",
+    "@assemble-inc/apple-ui": "^0.0.127",
     "@assemble-inc/base-ui": "^1.2.15",
-    "@assemble-inc/core": "^0.4.48",
+    "@assemble-inc/core": "^0.6.2",
     "@assemble-inc/eslint-config-asm": "^0.0.24",
     "@assemble-inc/util": "^0.1.7",
     "@types/react": "^18.0.27",

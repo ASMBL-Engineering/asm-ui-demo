@@ -10,12 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@assemble-inc/apple-ui@^0.0.57":
-  version "0.0.57"
-  resolved "https://registry.yarnpkg.com/@assemble-inc/apple-ui/-/apple-ui-0.0.57.tgz#07ea5ed5aa669499e209a5e628ce6175c4c372f8"
-  integrity sha512-avwZ2iNxkM51J7wSIgfa65VTrcy2uKrghuol319bbGkoGiUEznB2IPoJcABYlTrvXXMN4orgDb8b0RwhuHyOAw==
-  dependencies:
-    user "^0.0.0"
+"@assemble-inc/apple-ui@^0.0.127":
+  version "0.0.127"
+  resolved "https://registry.yarnpkg.com/@assemble-inc/apple-ui/-/apple-ui-0.0.127.tgz#87f87f330ffadfd69dad95121e0d42ea1406f2d0"
+  integrity sha512-kX8dfKL3ewvDx9fdZB3PGtGrPHL/Z63oCWUpDxTa50Gq8cUKTlZnSwmx83QNc9tvSKSc+mwXQSeqXRpYKZuADg==
 
 "@assemble-inc/base-ui@^1.2.15":
   version "1.2.15"
@@ -24,10 +22,10 @@
   dependencies:
     sass "^1.58.0"
 
-"@assemble-inc/core@^0.4.48":
-  version "0.4.48"
-  resolved "https://registry.yarnpkg.com/@assemble-inc/core/-/core-0.4.48.tgz#1ca3145ad90e7c464f175c77e939fc852b358537"
-  integrity sha512-gCU9NII4o++sYseVfpQeqe9yFY4scnHMXl50tl5sBbD6wgYgfcUlAg909QTlNSPhU6UDj5ek+x2wJklAcrvVig==
+"@assemble-inc/core@^0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@assemble-inc/core/-/core-0.6.2.tgz#ca05b344c4a2172f18377a988c37d0d12fa0cfca"
+  integrity sha512-KCMQKn+zUt0CewV4MFROUdIPXot0n++8v8zSOupWxR08tyq/NkA8Qr/2bgd6vtlk7CE9+RtuBtmTipCo4KC8rw==
 
 "@assemble-inc/eslint-config-asm@^0.0.24":
   version "0.0.30-beta-2"
@@ -4112,11 +4110,6 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-user@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/user/-/user-0.0.0.tgz#f27f1b23fc511f2a8efa40db55cfba123824e02a"
-  integrity sha512-eRNM5isOvr6aEFAGi1CqAkmLkYxW2NJ5ThhbD+6IJXYKM1mo7Gtxx4mQIveHz/5K3p/SVnlW9k17ETn+QAu8IQ==
 
 vite-plugin-svgr@^2.4.0:
   version "2.4.0"
