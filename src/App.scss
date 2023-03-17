@@ -1,18 +1,19 @@
 @import './variables.scss';
-@import '@assemble-inc/base-ui';
-// @import '@assemble-inc/apple-ui';
+// @import '@assemble-inc/base-ui';
+// @import '@assemble-inc/asm-ui';
+@import '@assemble-inc/core/dist/styles/react-datepicker.css';
+@import '@assemble-inc/apple-ui';
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--bodyBackgroundColor, #fff);
 }
 
-.App-header {
+.app-hero {
   background-color: var(--headerBgColor, #282c34);
   min-height: 50vh;
   display: flex;
@@ -20,8 +21,30 @@ body {
   align-items: center;
   justify-content: center;
 
-  h1.asm-heading.h1 {
+  h1 {
     font-size: calc(10px + 2vmin);
-    color: var(--headerFontColor, #ddd)
+    color: var(--headerFontColor, #ddd);
+  }
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background: var(--headerBgColor, #282c34);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  ul {
+    display: flex;
+    color: white;
+
+    li {
+      font-weight: bold;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
   }
 }
