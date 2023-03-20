@@ -10,10 +10,8 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@assemble-inc/apple-ui@^0.0.124":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@assemble-inc/apple-ui/-/apple-ui-0.0.124.tgz#ac7f66819db9dc28890f71dbb153a0cb8849b838"
-  integrity sha512-NAvkLKDYkNael/S36wXrASDOYw55UtkEXDr1FJ62pCNhHpg5tzRcnma2BR26I2fKHjq5l/PZsb5iBnXdRPBweg==
+"@assemble-inc/apple-ui@file:../asm-ui-themes/apple-ui":
+  version "0.0.138"
 
 "@assemble-inc/asm-ui@^1.1.2":
   version "1.1.2"

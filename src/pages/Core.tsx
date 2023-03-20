@@ -207,16 +207,16 @@ const Core = () => {
           <Input
             id="text"
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             type="text"
             label="Text Input"
             style={{ marginBottom: '20px' }}
           />
-          <Input id="url" value="" type="url" onChange={() => {}} label="Url Input" style={{ marginBottom: '20px' }} />
+          <Input id="url" value="" type="url" onChange={() => { }} label="Url Input" style={{ marginBottom: '20px' }} />
           <Input
             id="time"
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             type="time"
             label="Time Input"
             style={{ marginBottom: '20px' }}
@@ -224,7 +224,7 @@ const Core = () => {
           <Input
             id="tel"
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             type="tel"
             label="Telephone Input"
             style={{ marginBottom: '20px' }}
@@ -232,16 +232,16 @@ const Core = () => {
           <Input
             id="search"
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             type="search"
             label="Search Input"
             style={{ marginBottom: '20px' }}
           />
-          <SearchInput id="search2" onChange={() => {}} label="Search" style={{ marginBottom: '20px' }} value="" />
+          <SearchInput id="search2" onChange={() => { }} label="Search" style={{ marginBottom: '20px' }} value="" />
           <Input
             id="range"
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             type="range"
             label="Range Input"
             style={{ marginBottom: '20px' }}
@@ -249,7 +249,7 @@ const Core = () => {
           <Input
             id="password"
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             type="password"
             label="Password Input"
             style={{ marginBottom: '20px' }}
@@ -258,7 +258,7 @@ const Core = () => {
         <div>
           <Input
             id="num"
-            onChange={() => {}}
+            onChange={() => { }}
             value=""
             type="number"
             label="Number Input"
@@ -266,7 +266,7 @@ const Core = () => {
           />
           <Input
             id="email"
-            onChange={() => {}}
+            onChange={() => { }}
             value=""
             type="email"
             label="Email Input"
@@ -274,7 +274,7 @@ const Core = () => {
           />
           <Input
             id="month"
-            onChange={() => {}}
+            onChange={() => { }}
             value=""
             type="month"
             label="Month Input"
@@ -282,7 +282,7 @@ const Core = () => {
           />
           <Input
             id="week"
-            onChange={() => {}}
+            onChange={() => { }}
             value=""
             type="week"
             label="Week Input"
@@ -290,7 +290,7 @@ const Core = () => {
           />
           <Input
             id="date"
-            onChange={() => {}}
+            onChange={() => { }}
             value=""
             type="date"
             label="Date Input"
@@ -298,7 +298,7 @@ const Core = () => {
           />
           <Input
             id="datetime"
-            onChange={() => {}}
+            onChange={() => { }}
             value=""
             type="datetime-local"
             label="Date Time Input"
@@ -306,7 +306,7 @@ const Core = () => {
           />
           <Input
             id="color"
-            onChange={() => {}}
+            onChange={() => { }}
             value=""
             type="color"
             label="Color Input"
@@ -345,7 +345,7 @@ const Core = () => {
         <div>
           <FormattedNumberInput
             id="formnum"
-            onChange={() => {}}
+            onChange={() => { }}
             label="Formatted Number Input"
             initialValue=""
             style={{ marginBottom: '20px' }}
@@ -368,7 +368,7 @@ const Core = () => {
           <PhoneNumberInput
             id="phone"
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             label="Phone Number Input"
             style={{ marginBottom: '20px' }}
           />
@@ -376,13 +376,13 @@ const Core = () => {
             id=""
             checked
             value=""
-            onChange={() => {}}
+            onChange={() => { }}
             label="Radio Button Input"
             style={{ marginBottom: '20px' }}
           />
           <RadioButtonGroup
             id="radio-group"
-            onChange={() => {}}
+            onChange={() => { }}
             selectedRadio=""
             options={[
               { id: 'string', value: 'string', label: 'Radio!' },
@@ -481,7 +481,7 @@ const Core = () => {
         <Alert
           style={{ marginBottom: '1rem' }}
           alert={{ type: 'warning', active: true, message: "I'm that alert named Luda, ALERT ALERT." }}
-          handleClose={() => {}}
+          handleClose={() => { }}
           closeIcon={<CloseIcon />}
         />
         <Alert
