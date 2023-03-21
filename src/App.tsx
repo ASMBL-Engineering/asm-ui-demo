@@ -7,23 +7,43 @@ import Hero from './Hero';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [stylePath, setStylePath] = useState("./node_modules/@assemble-inc/base-ui/dist/style.css");
+  const [stylePath, setStylePath] = useState("base");
 
   const handleButtonClick = (style: string) => {
     setStylePath(style);
   }
 
+  const cleanStyles = (currentStyle: string) => {
+    const currentStyleSheets = document.styleSheets;
+
+    if (currentStyleSheets) {
+      for (let i = 0; i <= currentStyleSheets.length; i++) {
+        if (currentStyleSheets[i]) {
+          if (!currentStyleSheets[i].href?.includes(currentStyle) && !currentStyleSheets[i].href?.includes('index')) {
+            currentStyleSheets[i].disabled = true;
+          } else {
+            currentStyleSheets[i].disabled = false;
+          }
+        }
+      }
+    }
+  }
+
   useEffect(() => {
-    var head = document.head;
-    var link = document.createElement("link");
 
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.href = stylePath;
+    if (stylePath === 'base') {
+      import(`./styles/base-ui.scss`);
+    }
 
-    head.appendChild(link);
+    if (stylePath === 'apple') {
+      import(`./styles/apple-ui.scss`);
+    }
 
-    return () => { head.removeChild(link); }
+    if (stylePath === 'asm') {
+      import(`./styles/asm-ui.scss`);
+    }
+
+    cleanStyles(stylePath);
 
   }, [stylePath]);
 

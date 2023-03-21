@@ -20,9 +20,9 @@ const Header = ({ changeStyles }: HeaderProps) => {
           </li>
         </ul>
       </nav>
-      <Button onClick={() => changeStyles('./node_modules/@assemble-inc/base-ui/dist/style.css')}>Base Styles</Button>
-      <Button onClick={() => changeStyles('./node_modules/@assemble-inc/asm-ui/dist/style.scss')}>Assemble Styles</Button>
-      <Button onClick={() => changeStyles('./node_modules/@assemble-inc/apple-ui/dist/style.scss')}>Apple Styles</Button>
+      <Button onClick={() => changeStyles('base')}>Base Styles</Button>
+      <Button onClick={() => changeStyles('asm')}>Assemble Styles</Button>
+      <Button onClick={() => changeStyles('apple')}>Apple Styles</Button>
       <ThemeSwitcher disabled={pathname === '/blueprint'} />
     </header>
   );
