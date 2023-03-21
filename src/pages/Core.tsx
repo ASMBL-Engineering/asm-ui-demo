@@ -317,12 +317,13 @@ const Core = () => {
             id="select"
             label="Select Input"
             options={[
-              { value: 1, label: 'One' },
-              { value: 2, label: 'Two' },
-              { value: 3, label: 'Three' }
+              { value: '1', label: 'One' },
+              { value: '2', label: 'Two' },
+              { value: '3', label: 'Three' }
             ]}
             onChange={() => {}}
-            selectedOption="One"
+            value={{ value: '1', label: 'One' }}
+            selectedOption={{ value: '1', label: 'One' }}
           />
         </div>
       </TwoColumnContainer>
