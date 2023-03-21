@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const { pathname } = useLocation();
-  const [key, setKey] = useState('base-ui');
+  const [currentTheme, setCurrentTheme] = useState({ value: 'base-ui', label: 'Base UI' });
   const [theme, setTheme] = useState<string | undefined>();
 
-  const getDefaultTheme = async () => await import(`@assemble-inc/${key}/dist/style.css`);
+  const getDefaultTheme = async () => await import(`@assemble-inc/${currentTheme.value}/dist/style.css`);
 
   useEffect(() => {
     getDefaultTheme().then(theme => {
@@ -17,7 +17,7 @@ const Hero = () => {
   }, []);
 
   const handleThemeChange = async (option: any) => {
-    setKey(option.value);
+    setCurrentTheme(option);
     const theme = await import(`@assemble-inc/${option.value}/dist/style.css`);
 
     setTheme(theme.default);
@@ -28,21 +28,22 @@ const Hero = () => {
   return (
     <div className="app-hero">
       <Helmet>
-        <style key={key}>{theme}</style>
+        <style key={currentTheme.value}>{theme}</style>
       </Helmet>
       <h1>{heroTitle}</h1>
       {pathname === '/' && (
         <Select
           id="theme-select"
           label="Choose a Theme"
+          labelClassName="asm-label asm-label--white"
           options={[
             { value: 'base-ui', label: 'Base UI' },
             { value: 'asm-ui', label: 'ASM UI' },
             { value: 'apple-ui', label: 'Apple UI' }
           ]}
           onChange={handleThemeChange}
-          value={{ value: 'base-ui', label: 'Base UI' }}
-          selectedOption={{ value: 'base-ui', label: 'Base UI' }}
+          value={currentTheme}
+          selectedOption={currentTheme}
         />
       )}
     </div>
