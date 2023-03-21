@@ -35,10 +35,10 @@
     styled-components "^5.3.9"
     uuid "^9.0.0"
 
-"@assemble-inc/core@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@assemble-inc/core/-/core-0.6.1.tgz#d8225ee374d38673601906c001d2d88e5bbf8de0"
-  integrity sha512-1quyvx/bLmk6+UUiZpe9fXipE87LC9UvBK9iomDvor8/PYUk0ENOppYyrqfY61jpYU4MH8GyadUD8Dca2/gfvw==
+"@assemble-inc/core@^0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@assemble-inc/core/-/core-0.7.4.tgz#49a3e3d6d49d20abccbf9b0f793369482b49285e"
+  integrity sha512-5/YsyyZHfrrNUXGcQWh4gQN3IzzJEHzGnjtVoWgFj+vG8FrAB0puZgl8oY6dm6Y8XrLgxmJLgFu+Ty68YYig5Q==
 
 "@assemble-inc/eslint-config-asm@^0.0.30":
   version "0.0.30"
