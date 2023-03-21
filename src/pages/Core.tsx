@@ -42,7 +42,8 @@ import {
   TableFooter,
   Icon,
   IconLabelPair,
-  Modal
+  Modal,
+  Select
 } from '@assemble-inc/core';
 
 const Core = () => {
@@ -311,6 +312,13 @@ const Core = () => {
             type="color"
             label="Color Input"
             style={{ marginBottom: '20px' }}
+          />
+          <Select
+            id="select"
+            label="Select Input"
+            options={['One', 'Two', 'Three']}
+            onChange={() => {}}
+            selectedOption="One"
           />
         </div>
       </TwoColumnContainer>

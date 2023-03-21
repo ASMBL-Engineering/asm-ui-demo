@@ -20,7 +20,7 @@
     "@assemble-inc/asm-ui": "^1.1.2",
     "@assemble-inc/base-ui": "^1.4.3",
     "@assemble-inc/blueprint": "^0.6.2",
-    "@assemble-inc/core": "^0.6.1",
+    "@assemble-inc/core": "^0.7.4",
     "@assemble-inc/eslint-config-asm": "^0.0.30",
     "@assemble-inc/prettier-config-asm": "^0.1.0",
     "@assemble-inc/util": "^0.1.7",
