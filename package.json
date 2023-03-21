@@ -13,20 +13,23 @@
   "dependencies": {
     "classnames": "^2.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@assemble-inc/apple-ui": "^0.0.124",
     "@assemble-inc/asm-ui": "^1.1.2",
     "@assemble-inc/base-ui": "^1.4.3",
     "@assemble-inc/blueprint": "^0.6.2",
-    "@assemble-inc/core": "^0.7.4",
+    "@assemble-inc/core": "^0.7.5",
     "@assemble-inc/eslint-config-asm": "^0.0.30",
     "@assemble-inc/prettier-config-asm": "^0.1.0",
     "@assemble-inc/util": "^0.1.7",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/react-helmet": "^6.1.6",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "vite-plugin-dynamic-import": "^1.2.7",
     "eslint": "^8.34.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.4",

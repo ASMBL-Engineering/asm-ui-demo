@@ -316,7 +316,11 @@ const Core = () => {
           <Select
             id="select"
             label="Select Input"
-            options={['One', 'Two', 'Three']}
+            options={[
+              { value: 1, label: 'One' },
+              { value: 2, label: 'Two' },
+              { value: 3, label: 'Three' }
+            ]}
             onChange={() => {}}
             selectedOption="One"
           />
