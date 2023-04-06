@@ -1,35 +1,51 @@
 import { Select } from '@assemble-inc/core';
 import { useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import { useEffect, useState } from 'react';
+import { HeadProvider, Link, Style } from 'react-head';
 
 const Hero = () => {
   const { pathname } = useLocation();
   const [currentTheme, setCurrentTheme] = useState({ value: 'base-ui', label: 'Base UI' });
   const [theme, setTheme] = useState<string | undefined>();
 
-  const getDefaultTheme = async () => await import(`@assemble-inc/${currentTheme.value}/dist/style.css`);
+  // const getDefaultTheme = async () => await import(`@assemble-inc/${currentTheme.value}/dist/style.css`);
 
   useEffect(() => {
-    getDefaultTheme().then(theme => {
-      setTheme(theme.default);
-    });
+    handleThemeChange({ value: 'base-ui', label: 'Base UI' });
+    // getDefaultTheme().then(theme => {
+    //   setTheme(theme.default);
+    // });
   }, []);
 
   const handleThemeChange = async (option: any) => {
-    setCurrentTheme(option);
-    const theme = await import(`@assemble-inc/${option.value}/dist/style.css`);
+    if (currentTheme.value === option.value) return;
 
-    setTheme(theme.default);
+    setCurrentTheme(option);
+
+    const newTheme = await import(`@assemble-inc/${option.value}/dist/style.css`);
+
+    // for (var i = 0, max = stylesheets.length; i < max; i++) {
+    //   if (stylesheets[i]) {
+    //     stylesheets[i].parentNode.removeChild(stylesheets[i]);
+    //   }
+    // }
+
+    var stylesheets: any = [...document.getElementsByTagName('style')];
+    console.log('stylesheets: ', stylesheets);
+
+    const last = stylesheets[stylesheets.length - 1];
+    last.remove();
+
+    setTheme(newTheme.default);
   };
 
   const heroTitle = pathname === '/' ? 'Base UI Style Guide' : 'Blueprint Style Guide';
 
   return (
     <div className="app-hero">
-      <Helmet>
-        <style key={currentTheme.value}>{theme}</style>
-      </Helmet>
+      <HeadProvider>
+        <Style id="steez">{theme}</Style>
+      </HeadProvider>
       <h1>{heroTitle}</h1>
       {pathname === '/' && (
         <Select
