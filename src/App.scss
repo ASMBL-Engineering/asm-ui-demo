@@ -1,7 +1,4 @@
 @import './variables.scss';
-@import '@assemble-inc/base-ui';
-// @import '@assemble-inc/asm-ui';
-// @import '@assemble-inc/apple-ui';
 @import '@assemble-inc/core/dist/styles/react-datepicker.css';
 
 body {
@@ -47,4 +44,8 @@ body {
       }
     }
   }
+}
+
+.asm-label--white {
+  color: white !important;
 }
